@@ -133,12 +133,12 @@
           <li>Detection of media capabilities</li>
           <li>Detection of the autoplay policy</li>
           <li>Statistics on perceived playback quality</li>
+          <li>Playback of encrypted content</li>
           <li>Exposure of media features at the system level to Web applications (e.g. access to platform media keys, display of media metadata at the system level, creation of an <em>always-on-top</em> video window) to Web applications</li>
         </ul>
 
         <p>The following features are <b>out of scope</b>, and will not be addressed by the Media Working Group:</p>
         <ul>
-          <li>The playback of encrypted content</li>
           <li>The definition of any new codecs for audio and video</li>
           <li>The definition of adaptive streaming mechanisms (but the group will develop mechanisms that enable/ease the implementation of such mechanisms within Web applications)</li>
         </ul>
@@ -169,6 +169,14 @@
               <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
 
+            <dt id="encrypted-media" class="spec">Encrypted Media Extensions Level 2</dt>
+            <dd>
+              <p>This specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in HTML to add new features that allow control of playback of encrypted content. Level 2 updates the W3C Recommendation published in September 2017 to address generic maintenance issues against the specification and add features incubated in the Web Platform Incubator Community Group since then, namely: <a href="https://github.com/WICG/encrypted-media/">Persistent Usage Record sessions</a>, <a href="https://github.com/WICG/hdcp-detection/blob/master/explainer.md">HDCP Detection</a>, and <a href="https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md">Encryption scheme capability detection</a>. The inclusion of other features is considered out of scope for this group and would require rechartering.</p>
+              <p class="draft-status"><b>Draft state</b>: <a href="https://wicg.github.io/encrypted-media/">Adopted from the Web Platform Incubator Community Group</a></p>
+              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1-4 yyyy]</i></p>
+              <p><b>Reference document:</b> <a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a>, W3C Recommendation, 18 September 2017. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html">Call for Exclusions</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>.</p>
+            </dd>
+
             <dt id="media-capabilities" class="spec">Media Capabilities</dt>
             <dd>
               <p>This specification provides APIs to allow websites to make an optimal decision when picking media content for the user. The APIs expose information about the decoding and encoding capabilities for a given format but also output capabilities to find the best match based on the device’s display.</p>
@@ -192,7 +200,7 @@
 
             <dt id="media-source" class="spec">Media Source Extensions Level 2</dt>
             <dd>
-              <p>This specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in HTML to allow JavaScript to generate media streams for playback.</p>
+              <p>This specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in HTML to allow JavaScript to generate media streams for playback. Level 2 updates the W3C Recommendation published in November 2016 to address generic maintenance issues against the specification and add the <a href="https://github.com/wicg/media-source/blob/codec-switching/codec-switching-explainer.md">codec switching</a> feature incubated in the Web Platform Incubator Community Group since then. Additional features may be considered.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/media-source/">Adopted from the Web Platform Incubator Community Group</a></p>
               <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
               <p><b>Reference document:</b> <a href="https://www.w3.org/TR/2016/REC-media-source-20161117/">Media Source Extensions™</a>, W3C Recommendation 17 November 2016. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html"> Call for Exclusion</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>.</p>
