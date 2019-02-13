@@ -86,14 +86,14 @@
       <h1 id="title"><i class="todo">[PROPOSED]</i> Media Working Group Charter</h1>
 
       <div class="info">
-        <p>This document contains three sample draft charters into one for discussion:</p>
+        <p>This document contains a diff between three sample draft charters proposed for discussion:</p>
         <dl>
           <dt>Sample 1</dt>
-          <dd>Leaves playback of encrypted content out of scope. Text specific to this sample is marked with trailing <span title="Sample 1">①</span> characters.</dd>
+          <dd>Leaves playback of encrypted content out of scope. This is the reference sample for the diff.</dd>
           <dt>Sample 2</dt>
-          <dd>Includes playback of encrypted content. Text specific to this sample is marked with trailing <span title="Sample 2">②</span> characters.</dd>
+          <dd>Includes playback of encrypted content. Changes from sample 1 are marked with trailing <span title="Sample 2">②</span> characters.</dd>
           <dt>Sample 3</dt>
-          <dd>Includes playback of encrypted content and requires protection for investigation and disclosure of security vulnerabilities. Text specific to this sample is marked with trailing <span title="Sample 3">③</span> characters.</dd>
+          <dd>Includes playback of encrypted content and requires protection for investigation and disclosure of security vulnerabilities. Changes from sample 1 are marked with trailing <span title="Sample 3">③</span> characters.</dd>
         </dl>
       </div>
 
@@ -164,13 +164,13 @@
           <li>Detection of the autoplay policy</li>
           <li>Statistics on perceived playback quality</li>
           <li>Generation of media streams for playback</li>
-          <li><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> Playback of encrypted content <span title="Sample 3">③</span><span title="Sample 2">②</span></li>
+          <li><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> Playback of encrypted content <span title="Sample 3">③</span><span title="Sample 2">②</span></ins></li>
           <li>Exposure of media features at the system level to Web applications (e.g. access to platform media keys, display of media metadata at the system level, creation of an <em>always-on-top</em> video window) to Web applications</li>
         </ul>
 
         <p>The following features are <b>out of scope</b>, and will not be addressed by the Media Working Group:</p>
         <ul>
-          <li><del><span title="Sample 2">②</span>Playback of encrypted content <span title="Sample 3">③</span><span title="Sample 2">②</span></li>
+          <li><del><span title="Sample 2">②</span><span title="Sample 3">③</span> Playback of encrypted content <span title="Sample 3">③</span><span title="Sample 2">②</span></del></li>
           <li>The definition of any new codecs for audio and video</li>
           <li>The definition of adaptive streaming mechanisms (but the group will develop mechanisms that enable/ease the implementation of such mechanisms within Web applications)</li>
         </ul>
@@ -238,12 +238,12 @@
               <p><b>Reference document:</b> <a href="https://www.w3.org/TR/2016/REC-media-source-20161117/">Media Source Extensions™</a>, W3C Recommendation 17 November 2016. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html"> Call for Exclusion</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>.</p>
             </dd>
 
-            <dt id="encrypted-media" class="spec"><ins><span title="Sample 2">②</span>Encrypted Media Extensions <span title="Sample 3">③</span><span title="Sample 2">②</span></dt>
+            <dt id="encrypted-media" class="spec"><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> Encrypted Media Extensions <span title="Sample 3">③</span><span title="Sample 2">②</span></ins></dt>
             <dd>
-              <p><ins><span title="Sample 2">②</span>This existing specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in <a href="https://html.spec.whatwg.org/">HTML</a> to control playback of encrypted content. This revision updates the W3C Recommendation published in September 2017 to address generic maintenance issues against the specification and add four minor features incubated in the Web Platform Incubator Community Group since then, namely: <a href="https://github.com/WICG/encrypted-media/">Persistent Usage Record sessions</a>, <a href="https://github.com/WICG/hdcp-detection/blob/master/explainer.md">HDCP Detection</a>, <a href="https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md">Encryption scheme capability detection</a> and an API to <a href="https://github.com/joeyparrish/encrypted-media-find-session">find existing sessions</a>. The inclusion of other features is considered out of scope for this group and would require rechartering. <span title="Sample 3">③</span><span title="Sample 2">②</span> <ins><span title="Sample 3">③</span> Specific <a href="#success">success criteria</a> must be met for this revision to advance to <a href="https://www.w3.org/Consortium/Process/#RecsCR">Candidate Recommendation</a> or beyond. <span title="Sample 3">③</span></ins></p>
-              <p class="draft-status"><ins><span title="Sample 2">②</span><b>Draft state</b>: <a href="https://wicg.github.io/encrypted-media/">Adopted from the Web Platform Incubator Community Group</a> <span title="Sample 3">③</span><span title="Sample 2">②</span></p>
-              <p class="milestone"><ins><span title="Sample 2">②</span><b>Expected completion:</b> <i class="todo">[Q1-4 yyyy]</i> <span title="Sample 3">③</span><span title="Sample 2">②</span></p>
-              <p><ins><span title="Sample 2">②</span><b>Reference document:</b> <a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a>, W3C Recommendation, 18 September 2017. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html">Call for Exclusions</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>. <span title="Sample 3">③</span><span title="Sample 2">②</span></p>
+              <p><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> This existing specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in <a href="https://html.spec.whatwg.org/">HTML</a> to control playback of encrypted content. This revision updates the W3C Recommendation published in September 2017 to address generic maintenance issues against the specification and add four minor features incubated in the Web Platform Incubator Community Group since then, namely: <a href="https://github.com/WICG/encrypted-media/">Persistent Usage Record sessions</a>, <a href="https://github.com/WICG/hdcp-detection/blob/master/explainer.md">HDCP Detection</a>, <a href="https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md">Encryption scheme capability detection</a> and an API to <a href="https://github.com/joeyparrish/encrypted-media-find-session">find existing sessions</a>. The inclusion of other features is considered out of scope for this group and would require rechartering. <span title="Sample 3">③</span><span title="Sample 2">②</span></ins> <ins><span title="Sample 3">③</span> Specific <a href="#success">success criteria</a> must be met for this revision to advance to <a href="https://www.w3.org/Consortium/Process/#RecsCR">Candidate Recommendation</a> or beyond. <span title="Sample 3">③</span></ins></p>
+              <p class="draft-status"><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> <b>Draft state</b>: <a href="https://wicg.github.io/encrypted-media/">Adopted from the Web Platform Incubator Community Group</a> <span title="Sample 3">③</span><span title="Sample 2">②</span></ins></p>
+              <p class="milestone"><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> <b>Expected completion:</b> <i class="todo">[Q1-4 yyyy]</i> <span title="Sample 3">③</span><span title="Sample 2">②</span></ins></p>
+              <p><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> <b>Reference document:</b> <a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a>, W3C Recommendation, 18 September 2017. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html">Call for Exclusions</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>. <span title="Sample 3">③</span><span title="Sample 2">②</span></ins></p>
             </dd>
           </dl>
 
@@ -252,16 +252,16 @@
 
         <section id="other-deliverables">
           <h3>Other Deliverables</h3>
-          <p>The Media Working Group will maintain non-normative stream format specifications for Media Source Extensions and Encrypted Media Extensions, develop new non-normative stream format specifications for <del><span title="Sample 2">②</span>it <span title="Sample 3">③</span><span title="Sample 2">②</span><ins><span title="Sample 2">②</span>them <span title="Sample 3">③</span><span title="Sample 2">②</span>, and update corresponding registries. It will maintain the following Notes in particular:</p>
+          <p>The Media Working Group will maintain non-normative stream format specifications for Media Source Extensions and Encrypted Media Extensions, develop new non-normative stream format specifications for <del><span title="Sample 2">②</span><span title="Sample 3">③</span> it <span title="Sample 3">③</span><span title="Sample 2">②</span></del><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> them <span title="Sample 3">③</span><span title="Sample 2">②</span></ins>, and update corresponding registries. It will maintain the following Notes in particular:</p>
           <ul>
             <li><a href="https://www.w3.org/TR/mse-byte-stream-format-registry/">Media Source Extensions Byte Stream Format Registry</a></li>
-            <li><ins><span title="Sample 2">②</span><a href="https://www.w3.org/TR/eme-stream-registry/">Encrypted Media Extensions Stream Format Registry</a> <span title="Sample 3">③</span><span title="Sample 2">②</span></li>
+            <li><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> <a href="https://www.w3.org/TR/eme-stream-registry/">Encrypted Media Extensions Stream Format Registry</a> <span title="Sample 3">③</span><span title="Sample 2">②</span></ins></li>
             <li><a href="https://www.w3.org/TR/mse-byte-stream-format-isobmff/">ISO BMFF Byte Stream Format</a></li>
             <li><a href="https://www.w3.org/TR/mse-byte-stream-format-mp2t/">MPEG-2 Transport Streams Byte Stream Format</a></li>
             <li><a href="https://www.w3.org/TR/mse-byte-stream-format-mpeg-audio/">MPEG Audio Byte Stream Format</a></li>
             <li><a href="https://www.w3.org/TR/mse-byte-stream-format-webm/">WebM Byte Stream Format</a></li>
-            <li><ins><span title="Sample 2">②</span><a href="https://www.w3.org/TR/eme-stream-mp4/">ISO Common Encryption ('cenc') Protection Scheme for ISO Base Media File Format Stream Format</a> <span title="Sample 3">③</span><span title="Sample 2">②</span></li>
-            <li><ins><span title="Sample 2">②</span><a href="https://www.w3.org/TR/eme-stream-webm/">WebM Stream Format</a> <span title="Sample 3">③</span><span title="Sample 2">②</span></li>
+            <li><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> <a href="https://www.w3.org/TR/eme-stream-mp4/">ISO Common Encryption ('cenc') Protection Scheme for ISO Base Media File Format Stream Format</a> <span title="Sample 3">③</span><span title="Sample 2">②</span></ins></li>
+            <li><ins><span title="Sample 2">②</span><span title="Sample 3">③</span> <a href="https://www.w3.org/TR/eme-stream-webm/">WebM Stream Format</a> <span title="Sample 3">③</span><span title="Sample 2">②</span></ins></li>
           </ul>
           <p>Other non-normative documents may be created such as:</p>
           <ul>
