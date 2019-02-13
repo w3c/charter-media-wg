@@ -48,14 +48,12 @@
       del {
         background-color: #fbb;
       }
-      del.sc1:before { content: "① "; }
-      ins.sc2:before { content: "② "; }
-      ins.sc3:before { content: "③ "; }
-      ins.sc2.sc3:before { content: "②③ "; }
-      del.sc1:after { content: " ①"; }
-      ins.sc2:after { content: " ②"; }
-      ins.sc3:after { content: " ③"; }
-      ins.sc2.sc3:after { content: " ②③"; }
+      .sc2:before { content: "② "; }
+      .sc3:before { content: "③ "; }
+      .sc2.sc3:before { content: "②③ "; }
+      .sc2:after { content: " ②"; }
+      .sc3:after { content: " ③"; }
+      .sc2.sc3:after { content: " ②③"; }
     </style>
   </head>
   <body>
@@ -154,7 +152,7 @@
 
         <p>The following features are <b>out of scope</b>, and will not be addressed by the Media Working Group:</p>
         <ul>
-          <li><del class="sc1">Playback of encrypted content</del></li>
+          <li><del class="sc2 sc3">Playback of encrypted content</del></li>
           <li>The definition of any new codecs for audio and video</li>
           <li>The definition of adaptive streaming mechanisms (but the group will develop mechanisms that enable/ease the implementation of such mechanisms within Web applications)</li>
         </ul>
@@ -236,7 +234,7 @@
 
         <section id="other-deliverables">
           <h3>Other Deliverables</h3>
-          <p>The Media Working Group will maintain non-normative stream format specifications for Media Source Extensions and Encrypted Media Extensions, develop new non-normative stream format specifications for <del class="sc1">it</del><ins class="sc2 sc3">them</ins>, and update corresponding registries. It will maintain the following Notes in particular:</p>
+          <p>The Media Working Group will maintain non-normative stream format specifications for Media Source Extensions and Encrypted Media Extensions, develop new non-normative stream format specifications for <del class="sc2 sc3">it</del><ins class="sc2 sc3">them</ins>, and update corresponding registries. It will maintain the following Notes in particular:</p>
           <ul>
             <li><a href="https://www.w3.org/TR/mse-byte-stream-format-registry/">Media Source Extensions Byte Stream Format Registry</a></li>
             <li><ins class="sc2 sc3"><a href="https://www.w3.org/TR/eme-stream-registry/">Encrypted Media Extensions Stream Format Registry</a></ins></li>
