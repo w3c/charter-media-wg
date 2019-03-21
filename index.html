@@ -59,6 +59,12 @@
       .s3 {
         background-color: #FFE7E6;
       }
+      .roadmap { width: 80%;}
+      .roadmap tr td:nth-child(2) { background: #FED }
+      .roadmap tr td:nth-child(3) { background: #FCB }
+      .roadmap tr td:nth-child(4) { background: #FA9 }
+      .roadmap tr td:nth-child(5) { background: #F87 }
+      .roadmap tr td:nth-child(6) { background: #F60 }
     </style>
   </head>
   <body>
@@ -174,9 +180,7 @@
 
       <section id="deliverables">
         <h2>Deliverables</h2>
-        <p>More detailed milestones and updated publication schedules are available on the <span class="todo"><a href="https://www.w3.org/wiki/[groupname]/PubStatus">group publication status page</a></span>.</p>
-
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval.</p>
 
         <section id="normative">
           <h3>Normative Specifications</h3>
@@ -186,42 +190,36 @@
             <dd>
               <p>This new specification provides APIs to allow websites to make an optimal decision when picking media content for the user. The APIs expose information about the decoding and encoding capabilities for a given format but also output capabilities to find the best match based on the device’s display.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/media-capabilities/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
 
             <dt id="picture-in-picture" class="spec">Picture-in-Picture</dt>
             <dd>
               <p>This new specification defines APIs to allow websites to create a floating video window always on top of other windows so that users may continue consuming media while they interact with other content sites or applications on their device.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/picture-in-picture/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
 
             <dt id="mediasession" class="spec">Media Session</dt>
             <dd>
               <p>This new specification enables web developers to show customized media metadata on platform UI, customize available platform media controls, and access platform media keys such as hardware keys found on keyboards, headsets, remote controls, and software keys found in notification areas and on lock screens of mobile devices.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/mediasession/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
 
             <dt id="media-playback-quality" class="spec">Media Playback Quality</dt>
             <dd>
               <p>This new specification extends media playback interfaces defined in <a href="https://html.spec.whatwg.org/">HTML</a> to add new features that can be used to detect the user perceived playback quality.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/media-playback-quality/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
 
             <dt id="autoplay" class="spec">Autoplay Policy Detection</dt>
             <dd>
               <p>This new specification provides APIs to allow websites to determine the document-level autoplay policy and whether autoplay will succeed for a given media element in a page.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://github.com/wicg/autoplay/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
             </dd>
 
             <dt id="media-source" class="spec">Media Source Extensions</dt>
             <dd>
               <p>This existing specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in <a href="https://html.spec.whatwg.org/">HTML</a> to allow JavaScript to generate media streams for playback. The scope of this revision is the same as that of the W3C Recommendation published in November 2016, limited to the generation and control of media streams. This revision updates the W3C Recommendation to address generic maintenance issues against the specification and add the <a href="https://github.com/wicg/media-source/blob/codec-switching/codec-switching-explainer.md">codec switching</a> feature incubated in the Web Platform Incubator Community Group since then. Additional features that are strictly in the scope of this specification may be considered.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/media-source/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1–4 yyyy]</i></p>
               <p><b>Reference document:</b> <a href="https://www.w3.org/TR/2016/REC-media-source-20161117/">Media Source Extensions™</a>, W3C Recommendation 17 November 2016. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html"> Call for Exclusion</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>.</p>
             </dd>
 
@@ -229,7 +227,6 @@
             <dd>
               <p>This existing specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in <a href="https://html.spec.whatwg.org/">HTML</a> to control playback of encrypted content. This revision updates the W3C Recommendation published in September 2017 to address generic maintenance issues against the specification and add four minor features incubated in the Web Platform Incubator Community Group since then, namely: <a href="https://github.com/WICG/encrypted-media/">Persistent Usage Record sessions</a>, <a href="https://github.com/WICG/hdcp-detection/blob/master/explainer.md">HDCP Detection</a>, <a href="https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md">Encryption scheme capability detection</a> and an API to <a href="https://github.com/joeyparrish/encrypted-media-find-session">find existing sessions</a>. The inclusion of other features is considered out of scope for this group and would require rechartering.</p>
               <p class="draft-status"><b>Draft state</b>: <a href="https://wicg.github.io/encrypted-media/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p class="milestone"><b>Expected completion:</b> <i class="todo">[Q1-4 yyyy]</i></p>
               <p><b>Reference document:</b> <a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a>, W3C Recommendation, 18 September 2017. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html">Call for Exclusions</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>.</p>
             </dd>
           </dl>
@@ -260,14 +257,74 @@
 
         <section id="timeline">
           <h3>Timeline</h3>
-          <ul class="todo">
-            <li>[Month YYYY]: First teleconference</li>
-            <li>[Month YYYY]: First face-to-face meeting</li>
-            <li>[Month YYYY]: Requirements and Use Cases for FooML</li>
-            <li>[Month YYYY]: FPWD for FooML</li>
-            <li>[Month YYYY]: Requirements and Use Cases for BarML</li>
-            <li>[Month YYYY]: FPWD FooML Primer</li>
-          </ul>
+          <table class="roadmap">
+            <caption>Milestones</caption>
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th><abbr title="First Working Draft">FPWD</abbr></th>
+                <th><abbr title="Candidate Recommendation">CR</abbr></th>
+                <th><abbr title="Proposed Recommendation">PR</abbr></th>
+                <th><abbr title="Recommendation">Rec</abbr></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Media Capabilities</th>
+                <td>Q3 2019</td>
+                <td>Q2 2020</td>
+                <td>Q1 2021</td>
+                <td>Q1 2021</td>
+              </tr>
+              <tr>
+                <th>Picture-in-Picture</th>
+                <td>Q3 2019</td>
+                <td>Q4 2020</td>
+                <td>Q2 2021</td>
+                <td>Q2 2021</td>
+              </tr>
+              <tr>
+                <th>Media Session</th>
+                <td>Q3 2019</td>
+                <td>Q4 2020</td>
+                <td>Q2 2021</td>
+                <td>Q2 2021</td>
+              </tr>
+              <tr>
+                <th>Media Playback Quality</th>
+                <td>Q1 2020</td>
+                <td>Q4 2020</td>
+                <td>Q2 2021</td>
+                <td>Q2 2021</td>
+              </tr>
+              <tr>
+                <th>Autoplay Policy Detection</th>
+                <td>Q1 2020</td>
+                <td>Q4 2020</td>
+                <td>Q2 2021</td>
+                <td>Q2 2021</td>
+              </tr>
+              <tr>
+                <th>Media Source Extensions</th>
+                <td>Q1 2020</td>
+                <td>Q4 2020</td>
+                <td>Q2 2021</td>
+                <td>Q2 2021</td>
+              </tr>
+              <tr>
+                <th>Encrypted Media Extensions</th>
+                <td>Q1 2020</td>
+                <td>Q4 2020</td>
+                <td>Q2 2021</td>
+                <td>Q2 2021</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><em>
+            Note: The actual production of some of the deliverables may
+              follow a different timeline. Schedule changes will be documented on
+              the <span class="todo"><a href="">group home page</a></span>.
+          </em></p>
         </section>
       </section>
 
