@@ -175,7 +175,24 @@
           <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.</p>
           <p>Each specification should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
           <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximising accessibility in implementations. Each specification should notably meet media related requirements specified in the latest versions of the <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media Accessibility User Requirements</a> and <a href="https://w3c.github.io/apa/fast/">Framework for Accessible Specification of Technologies (FAST)</a> documents.</p>
-          <p>To promote interoperability, the working group will follow a <a href="https://www.w3.org/2019/02/testing-policy.html">test as you commit</a> approach.</p>
+          <p>To promote interoperability, the working group will follow a <a href="https://www.w3.org/2019/02/testing-policy.html">test as you commit</a> approach:</p>
+          <blockquote cite='https://www.w3.org/2019/02/testing-policy.html'>
+            <p>All normative spec changes are generally expected to have a corresponding pull request in
+              <a href="https://github.com/web-platform-tests/wpt">web-platform-tests</a>, either in the form
+              of new tests or modifications to existing tests, or must include the rationale for why test updates
+              are not required for the proposed update.</p>
+
+            <p>Typically, both pull requests (spec updates and tests) will be merged at the same time. If a
+              pull request for the specification is approved but the other needs more work, add the '<a
+              href="https://w3c.github.io/spec-labels.html" rel="nofollow">needs tests</a>' label or, in
+              web-platform-tests, the '<a href="https://github.com/web-platform-tests/wpt/issues?utf8=%E2%9C%93&amp;q=label%3Astatus%3Aneeds-spec-decision%20">status:needs-spec-decision</a>'
+              label. Note that a test change that contradicts the specification should not be merged before the corresponding specification change.</p>
+
+            <p>If testing is not practical due to web-platforms-tests limitations, please explain why and
+              if appropriate file an issue with the '<a
+              href="https://github.com/web-platform-tests/wpt/issues?utf8=%E2%9C%93&amp;q=label%3Atype%3Auntestable%20">type:untestable</a>'
+              label to follow up later.</p>
+          </blockquote>
         </section>
       </section>
 
@@ -219,16 +236,14 @@
 
             <dt id="media-source" class="spec">Media Source Extensions</dt>
             <dd>
-              <p>This existing specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in <a href="https://html.spec.whatwg.org/">HTML</a> to allow JavaScript to generate media streams for playback. The scope of this revision is the same as that of the W3C Recommendation published in November 2016, limited to the generation and control of media streams. This revision updates the W3C Recommendation to address generic maintenance issues against the specification and add the <a href="https://github.com/wicg/media-source/blob/codec-switching/codec-switching-explainer.md">codec switching</a> feature incubated in the Web Platform Incubator Community Group since then. Additional features that are strictly in the scope of this specification may be considered.</p>
+              <p>This existing specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in <a href="https://html.spec.whatwg.org/">HTML</a> to allow JavaScript to generate media streams for playback. The scope of this revision is the same as that of the <a href='https://www.w3.org/TR/media-source/'>W3C Recommendation published in November 2016</a>, limited to the generation and control of media streams. This revision updates the W3C Recommendation to address generic maintenance issues against the specification and add the <a href="https://github.com/wicg/media-source/blob/codec-switching/codec-switching-explainer.md">codec switching</a> feature incubated in the Web Platform Incubator Community Group since then. Additional features that are strictly in the scope of this specification may be considered.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://wicg.github.io/media-source/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p><b>Reference document:</b> <a href="https://www.w3.org/TR/2016/REC-media-source-20161117/">Media Source Extensions™</a>, W3C Recommendation 17 November 2016. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html"> Call for Exclusion</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>.</p>
             </dd>
 
             <dt id="encrypted-media" class="spec">Encrypted Media Extensions</dt>
             <dd>
-              <p>This existing specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in <a href="https://html.spec.whatwg.org/">HTML</a> to control playback of encrypted content. This revision updates the W3C Recommendation published in September 2017 to address generic maintenance issues against the specification and add four minor features incubated in the Web Platform Incubator Community Group since then, namely: <a href="https://github.com/WICG/encrypted-media/">Persistent Usage Record sessions</a>, <a href="https://github.com/WICG/hdcp-detection/blob/master/explainer.md">HDCP Detection</a>, <a href="https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md">Encryption scheme capability detection</a> and an API to <a href="https://github.com/joeyparrish/encrypted-media-find-session">find existing sessions</a>. The inclusion of other features is considered out of scope for this group and would require rechartering.</p>
+              <p>This existing specification extends the <a href="https://html.spec.whatwg.org/#htmlmediaelement"><code>HTMLMediaElement</code></a> interface defined in <a href="https://html.spec.whatwg.org/">HTML</a> to control playback of encrypted content. This revision updates the <a href='https://www.w3.org/TR/encrypted-media/'>W3C Recommendation published in September 2017</a> to address generic maintenance issues against the specification and add four minor features incubated in the Web Platform Incubator Community Group since then, namely: <a href="https://github.com/WICG/encrypted-media/">Persistent Usage Record sessions</a>, <a href="https://github.com/WICG/hdcp-detection/blob/master/explainer.md">HDCP Detection</a>, <a href="https://github.com/WICG/encrypted-media-encryption-scheme/blob/master/explainer.md">Encryption scheme capability detection</a> and an API to <a href="https://github.com/joeyparrish/encrypted-media-find-session">find existing sessions</a>. The inclusion of other features is considered out of scope for this group and would require rechartering.</p>
               <p class="draft-status"><b>Draft state</b>: <a href="https://github.com/WICG/encrypted-media/">Adopted from the Web Platform Incubator Community Group</a></p>
-              <p><b>Reference document:</b> <a href="https://www.w3.org/TR/2017/REC-encrypted-media-20170918/">Encrypted Media Extensions</a>, W3C Recommendation, 18 September 2017. Associated <a href="https://lists.w3.org/Archives/Member/member-cfe/2016Jul/0001.html">Call for Exclusions</a> on 05 July 2016 ended on 03 September 2016. Produced under the <a href="https://www.w3.org/2013/09/html-charter">HTML Media Extensions Working Group Charter</a>.</p>
             </dd>
           </dl>
         </section>
@@ -440,7 +455,7 @@
           All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
         </p>
         <p>
-          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/policies#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
         </p>
       </section>
 
@@ -484,7 +499,7 @@
         <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
         <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
         <a href="https://www.keio.ac.jp/">Keio</a>,
-        <a href="http://ev.buaa.edu.cn/">Beihang</a>
+        <a href="https://ev.buaa.edu.cn/">Beihang</a>
         ), All Rights Reserved.
 
         <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
