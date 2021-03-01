@@ -6,9 +6,14 @@
     <title>Media Working Group Charter</title>
 
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="https://www.w3.org/Guide/pubrules-style.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css" />
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css" />
     <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
       ul#navbar {
         font-size: small;
       }
@@ -53,12 +58,6 @@
       .info dt {
         font-weight: bold;
       }
-      .s2 {
-        background-color: #CFE6D3;
-      }
-      .s3 {
-        background-color: #FFE7E6;
-      }
       .roadmap { width: 80%;}
       .roadmap tr td:nth-child(2) { background: #FED }
       .roadmap tr td:nth-child(3) { background: #FCB }
@@ -73,6 +72,7 @@
         <ul id="navbar">
           <li><a href="#scope">Scope</a></li>
           <li><a href="#deliverables">Deliverables</a></li>
+          <li><a href="#success-criteria">Success Criteria</a></li>
           <li><a href="#coordination">Coordination</a></li>
           <li><a href="#participation">Participation</a></li>
           <li><a href="#communication">Communication</a></li>
@@ -91,13 +91,13 @@
       <h1 id="title"><i class="todo">[PROPOSED]</i> Media Working Group Charter</h1>
 
       <div class="info">
-        <p>This document is a draft charter proposed for discussion and review by the W3C Advisory Committee. It is available on <a href="https://github.com/w3c/charter-media-wg/">GitHub</a>. Feel free to raise <a href="https://github.com/w3c/charter-media-wg/issues">issues</a>. The commit history contains the <a href="https://raw.githack.com/w3c/charter-media-wg/0c90ba9fadc59882777e6a8377f8ada9f8f7b0d8/index.html">three-sample version</a> of this draft charter mentioned in the <a href="https://lists.w3.org/Archives/Public/public-new-work/2019Feb/0009.html">advance notice of work</a>.</p>
+        <p>This document is a draft charter proposed for discussion and review by the W3C Advisory Committee. It is available on <a href="https://github.com/w3c/charter-media-wg/">GitHub</a>. Feel free to raise <a href="https://github.com/w3c/charter-media-wg/issues">issues</a>.</p>
       </div>
 
-      <p class="mission">The <strong>mission</strong> of the <span class="todo"><a href="">Media Working Group</a></span> is to develop and improve client-side media processing and playback features on the Web.</p>
+      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/media-wg/">Media Working Group</a> is to develop and improve client-side media processing and playback features on the Web.</p>
 
       <div class="noprint">
-        <p class="join"><span class="todo"><a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the Media Working Group</a></span>.</p>
+        <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/115198/join">Join the Media Working Group</a>.</p>
       </div>
 
       <section id="details">
@@ -107,17 +107,24 @@
               Start date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+              <i class="todo">01 June 2021</i>
             </td>
           </tr>
-          <tr id="Duration">
+          <tr id="CharterEnd">
             <th>
               End date
             </th>
             <td>
-              <i class="todo">2 years after start date</i>
+              <i class="todo">31 May 2023</i>
             </td>
           </tr>
+
+          <tr>
+            <th>Charter extension</th>
+            <td>See <a href="#history">Change History</a>.
+            </td>
+          </tr>
+
           <tr>
             <th>
               Chairs
@@ -163,41 +170,19 @@
           <li>Exposure of metadata event tracks synchronized to audio or video media</li>
         </ul>
 
-        <p>The following features are <b>out of scope</b>, and will not be addressed by the Media Working Group:</p>
-        <ul>
-          <li>The definition of any new codecs for audio and video</li>
-          <li>The definition of adaptive streaming mechanisms (but the group will develop mechanisms that enable/ease the implementation of such mechanisms within Web applications)</li>
-        </ul>
-
-        <section id="success">
-          <h3>Success Criteria</h3>
-          <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.</p>
-          <p>Each specification should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
-          <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximising accessibility in implementations. The latest versions of the <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media Accessibility User Requirements</a> and <a href="https://w3c.github.io/apa/fast/">Framework for Accessible Specification of Technologies (FAST)</a> documents notably provide media related advice to ensure that specifications developed by the Working Group meet the needs of users with disabilities.</p>
-          <p>To promote interoperability, the working group will follow a <a href="https://www.w3.org/2019/02/testing-policy.html">test as you commit</a> approach:</p>
-          <blockquote cite='https://www.w3.org/2019/02/testing-policy.html'>
-            <p>All normative spec changes are generally expected to have a corresponding pull request in
-              <a href="https://github.com/web-platform-tests/wpt">web-platform-tests</a>, either in the form
-              of new tests or modifications to existing tests, or must include the rationale for why test updates
-              are not required for the proposed update.</p>
-
-            <p>Typically, both pull requests (spec updates and tests) will be merged at the same time. If a
-              pull request for the specification is approved but the other needs more work, add the '<a
-              href="https://w3c.github.io/spec-labels.html" rel="nofollow">needs tests</a>' label or, in
-              web-platform-tests, the '<a href="https://github.com/web-platform-tests/wpt/issues?utf8=%E2%9C%93&amp;q=label%3Astatus%3Aneeds-spec-decision%20">status:needs-spec-decision</a>'
-              label. Note that a test change that contradicts the specification should not be merged before the corresponding specification change.</p>
-
-            <p>If testing is not practical due to web-platforms-tests limitations, please explain why and
-              if appropriate file an issue with the '<a
-              href="https://github.com/web-platform-tests/wpt/issues?utf8=%E2%9C%93&amp;q=label%3Atype%3Auntestable%20">type:untestable</a>'
-              label to follow up later.</p>
-          </blockquote>
+        <section id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+          <p>The following features are <b>out of scope</b>, and will not be addressed by the Media Working Group:</p>
+          <ul>
+            <li>The definition of any new codecs for audio and video</li>
+            <li>The definition of adaptive streaming mechanisms (but the group will develop mechanisms that enable/ease the implementation of such mechanisms within Web applications)</li>
+          </ul>
         </section>
       </section>
 
       <section id="deliverables">
         <h2>Deliverables</h2>
-        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval.</p>
+        <p><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval. <i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
         <section id="normative">
           <h3>Normative Specifications</h3>
@@ -353,14 +338,31 @@
           <p><em>
             Note: The actual production of some of the deliverables may
               follow a different timeline. Schedule changes will be documented on
-              the <span class="todo"><a href="">group home page</a></span>.
+              the <a href="https://www.w3.org/media-wg/">group home page</a>.
           </em></p>
         </section>
       </section>
 
+      <section id="success-criteria">
+        <h2>Success Criteria</h2>
+        <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.</p>
+        <p>Each specification should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+        <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximising accessibility in implementations. The latest versions of the <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media Accessibility User Requirements</a> and <a href="https://w3c.github.io/apa/fast/">Framework for Accessible Specification of Technologies (FAST)</a> documents notably provide media related advice to ensure that specifications developed by the Working Group meet the needs of users with disabilities.</p>
+        <p>To promote interoperability, To promote interoperability, all changes made to specifications should have <a href="https://www.w3.org/2019/02/testing-policy.html">tests</a>.</p>
+      </section>
+
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a> and at least 3 months before <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.</p>
+        <p>For all specifications, this Working Group will seek
+          <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a>
+          for accessibility, internationalization, performance, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>. The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification. The Working Group is advised to seek a review at least 3 months before first entering
+          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
 
         <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
 
@@ -414,6 +416,9 @@
         <p>
           The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
         </p>
+        <p>
+          Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.
+        </p>
       </section>
 
       <section id="communication">
@@ -425,13 +430,13 @@
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <span class="todo"><a href="">Media Working Group home page</a></span>.
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/media-wg/">Media Working Group home page</a>.
         </p>
         <p>
           Most Media Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-          This group primarily conducts its technical work on GitHub issues. The public is invited to review, discuss and contribute to this work.
+          This group primarily conducts its technical work on <a id="public-github" href="https://github.com/w3c/media-wg/issues">GitHub issues</a>. The public is invited to review, discuss and contribute to this work.
         </p>
         <p>
           The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
@@ -450,9 +455,9 @@
         <p>
           To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
 
-          A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the group consensus on the issue.
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the group consensus on the issue.
 
-          If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
         <p>
           All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
@@ -467,7 +472,7 @@
           Patent Policy
         </h2>
         <p>
-          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 5 February 2004 updated 1 August 2017). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
           For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
         </p>
@@ -485,6 +490,62 @@
         <p>
           This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
+
+        <section id="history">
+          <h3>
+            Charter History
+          </h3>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+
+          <table class="history">
+            <tbody>
+              <tr>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.w3.org/2019/05/media-wg-charter.html">Initial Charter</a>
+                </th>
+                <td>
+                  22 May 2019
+                </td>
+                <td>
+                  31 May 2021
+                </td>
+                <td>
+                  none
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="#">Rechartered</a>
+                </th>
+                <td>
+                  <i class="todo">01 June 2021</i>
+                </td>
+                <td>
+                  <i class="todo">31 May 2023</i>
+                </td>
+                <td>
+                  <ul>
+                    <li>Adjusted boilerplate text to match latest charter template</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
     </main>
 
@@ -496,7 +557,7 @@
       </address>
 
       <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2019
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2021
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (
         <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
