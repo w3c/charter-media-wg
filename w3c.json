@@ -1,5 +1,5 @@
 {
-  "group": 102,
+  "group": ["wg/media"],
   "contacts": ["tidoust"],
   "repo-type": "process"
 }
