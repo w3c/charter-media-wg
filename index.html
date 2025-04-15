@@ -270,6 +270,7 @@
             <dt id="web-codecs" class="spec">WebCodecs</dt>
             <dd>
               <p>This specification defines interfaces for encoding and decoding of audio, video, and images.</p>
+              <p>WebCodecs operates on non-containerized media. To ease integration with pipelines that process containerized media, the Working Group expects to give applications the ability to use an <code>HTMLMediaElement</code> and buffering mechanisms defined in Media Source Extensions to achieve adaptive playback of media that originates from WebCodecs structures. This includes defining a way to represent encrypted audio and video chunks in WebCodecs, along with a way to pass them to Media Source Extensions.</p>
               <p class="milestone"><b>Expected completion:</b> <abbr title="Candidate Recommendation">CR</abbr> Q2 2024 - Recommendation Q2 2025.</p>
               <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/webcodecs/">Working Draft</a></p>
               <p><b>Adopted Draft:</b> WebCodecs, <a href="https://www.w3.org/TR/2023/WD-webcodecs-20230130/">https://www.w3.org/TR/2023/WD-webcodecs-20230130/</a>, 30 January 2023</a>.</p>
@@ -644,6 +645,8 @@
                 <td>
                   <ul>
                     <li>Adjusted boilerplate text to match latest charter template</li>
+                    <li>Split Scope section into Background and Scope sections</li>
+                    <li>Mentioned intent to integrate WebCodecs with Media Source Extensions / Encrypted Media Extensions</li>
                   </ul>
                 </td>
               </tr>
