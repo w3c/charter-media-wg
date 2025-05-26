@@ -441,15 +441,23 @@
         <p>In order to advance beyond <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">Candidate Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/policies/process/#implementation-experience">at least two independent interoperable implementations</a> of every feature defined in the specification, where interoperability can be verified by passing open test suites.</p>
         <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
         <p>To promote interoperability, all changes made to specifications in Candidate Recommendation or to features that have deployed implementations should have <a href="https://www.w3.org/2019/02/testing-policy.html">tests</a>. Testing efforts should be conducted via the <a href="https://github.com/web-platform-tests/wpt">Web Platform Tests</a> project.</p>
-        <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users, including analysis of <a href="https://www.w3.org/TR/fingerprinting-guidance/">fingerprinting surface introduced</a> and suggested mitigation strategies, as applicable. For features that allow detection and/or negotiation of capabilities, the group will document architectural alternatives, particularly ones that minimize fingerprinting surface, and seek horizontal review as it makes its choice(s) among the alternatives. Where features are imported by reference to other specifications, analysis and mitigation of their privacy and security issues will be included in the referencing specification.</p>
-        <p>This Working Group expects to follow the TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.</p>
+        <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+
         <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and recommendations for maximising accessibility in implementations. The latest versions of the <a href="https://www.w3.org/TR/media-accessibility-reqs/">Media Accessibility User Requirements</a> and <a href="https://w3c.github.io/apa/fast/">Framework for Accessible Specification of Technologies (FAST)</a> documents notably provide media related advice to ensure that specifications developed by the Working Group meet the needs of users with disabilities.</p>
+
+        <!-- W3C statements -->
+        <p>This group is expected to be guided by the following documents:</p>
+        <ul>
+          <li><a href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a>,</li>
+          <li><a href="https://www.w3.org/TR/privacy-principles/">Privacy Principles</a>,</li>
+          <li><a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.</li>
+        </ul>
       </section>
 
       <section id="coordination">
         <h2>Coordination</h2>
         <p>For all specifications, this Working Group will seek
-          <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a>
+          <a href="https://www.w3.org/guide/documentreview/#how-to-get-horizontal-review">horizontal review</a>
           for accessibility, internationalization, privacy, and security with the relevant Working and
           Interest Groups, and with the <a href="https://www.w3.org/groups/other/tag/" title="Technical Architecture Group">TAG</a>.
           Invitation for review must be issued during each major standards-track document transition, including
@@ -715,7 +723,7 @@
                 </td>
                 <td>
                   <ul>
-                    <li>Adjusted boilerplate text to match latest charter template</li>
+                    <li>Adjusted boilerplate text to match latest charter template and rolled back custom text on fingerprinting following privacy review</li>
                     <li>Split Scope section into Background and Scope sections</li>
                     <li>Adjusted descriptions of Media Source Extensions / Encrypted Media Extensions to align with actual and planned work</li>
                     <li>Added missing published Encrypted Media Extensions registries and registrations</li>
